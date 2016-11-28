@@ -1,9 +1,13 @@
 FROM ubuntu:16.10
 
 ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get -y install software-properties-common apt-utils
+# For fdkaac and openh264
+RUN add-apt-repository -y ppa:djcj/tools
 RUN apt-get update
 RUN apt-get -y install \
-    yasm apt-utils git \
+    yasm git \
     libx264-dev libx265-dev libvpx-dev libvorbis-dev libtheora-dev libspeex-dev \
     libopencore-amrwb-dev libopencore-amrnb-dev libmp3lame-dev libopenjpeg-dev \
     libvo-amrwbenc-dev nvidia-cuda-dev libopus-dev libssl-dev libass-dev \
@@ -16,5 +20,6 @@ RUN apt-get -y install \
     libxvidcore-dev libopenal-dev nvidia-opencl-dev libcdio-paranoia-dev \
     libgcrypt20-dev libomxil-bellagio-dev libnetcdf-dev libzvbi-dev libczmq-dev \
     libwebp-dev libschroedinger-dev libgsm1-dev libbs2b-dev ladspa-sdk \
-    frei0r-plugins-dev libchromaprint-dev
+    frei0r-plugins-dev libchromaprint-dev \
+    libfdk-aac-dev libopenh264-dev
 
