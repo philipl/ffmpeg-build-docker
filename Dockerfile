@@ -24,6 +24,7 @@ RUN apt-get -y install \
     libgcrypt20-dev libomxil-bellagio-dev libnetcdf-dev libzvbi-dev libczmq-dev \
     libwebp-dev libschroedinger-dev libgsm1-dev libbs2b-dev ladspa-sdk \
     frei0r-plugins-dev libchromaprint-dev libleptonica-dev libavc1394-dev \
+    libcrystalhd-dev libva-dev \
     libfdk-aac-dev libopenh264-dev \
     libzimg-dev
 
