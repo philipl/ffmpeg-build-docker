@@ -2,6 +2,7 @@ FROM ubuntu:16.10
 
 ENV DEBIAN_FRONTEND noninteractive
 
+RUN apt-get update
 RUN apt-get -y install software-properties-common apt-utils
 # For fdkaac and openh264
 RUN add-apt-repository -y ppa:djcj/tools
