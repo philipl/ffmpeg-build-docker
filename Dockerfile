@@ -21,6 +21,6 @@ RUN apt-get -y install \
     libxvidcore-dev libopenal-dev nvidia-opencl-dev libcdio-paranoia-dev \
     libgcrypt20-dev libomxil-bellagio-dev libnetcdf-dev libzvbi-dev libczmq-dev \
     libwebp-dev libschroedinger-dev libgsm1-dev libbs2b-dev ladspa-sdk \
-    frei0r-plugins-dev libchromaprint-dev libleptonica-dev \
+    frei0r-plugins-dev libchromaprint-dev libleptonica-dev libavc1394-dev \
     libfdk-aac-dev libopenh264-dev
 
